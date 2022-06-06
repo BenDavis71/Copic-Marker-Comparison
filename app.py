@@ -32,6 +32,7 @@ url = st.text_input("Image URL")
 if url:
     response = requests.get(url)
     background_image = Image.open(BytesIO(response.content))
+    st.image(background_image)
 
     #get default width and height
     width, height = background_image.size
