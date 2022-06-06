@@ -1,0 +1,8 @@
+streamlit
+requests
+numpy
+pandas
+io
+PIL
+skimage
+streamlit_drawable_canvas
