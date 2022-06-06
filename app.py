@@ -47,7 +47,7 @@ if url:
         drawing_mode='point',
         height = height,
         width = width,
-        key=f'{url}',
+        key=f'1{url}',
     )
 
     #if necessary, resize image to fit browser window
