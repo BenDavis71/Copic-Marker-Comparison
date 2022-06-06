@@ -28,7 +28,7 @@ max_height = 650
 max_width = 800
 
 #
-url = st.text_area("Image URL")
+url = st.text_input("Image URL")
 if url:
     response = requests.get(url)
     background_image = Image.open(BytesIO(response.content))
