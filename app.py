@@ -36,6 +36,19 @@ if url:
 
     #get default width and height
     width, height = background_image.size
+    
+    # Create a canvas component
+    canvas_result = st_canvas(
+        fill_color="rgba(0, 0, 0, 0)",  # Fixed transparent fill color
+        stroke_width=stroke_width,
+        point_display_radius=point_display_radius,
+        background_image=background_image,
+        update_streamlit=True,
+        drawing_mode='point',
+        height = height,
+        width = width,
+        key=f'{url}',
+    )
 
     #if necessary, resize image to fit browser window
     if height > max_height:
