@@ -2,6 +2,5 @@ streamlit
 requests
 numpy
 pandas
-PIL
 skimage
 streamlit_drawable_canvas
