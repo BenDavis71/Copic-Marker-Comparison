@@ -27,12 +27,11 @@ point_display_radius = 1
 max_height = 650
 max_width = 800
 
-#
+#load in image via url
 url = st.text_input("Image URL")
 if url:
     response = requests.get(url)
     background_image = Image.open(BytesIO(response.content))
-    st.image(background_image)
 
     #get default width and height
     width, height = background_image.size
