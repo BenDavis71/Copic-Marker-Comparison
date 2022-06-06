@@ -23,7 +23,6 @@ st.markdown('_Click on user-provided image in order to identify 5 closest copic 
 
 #canvas variables
 stroke_width = 0
-point_display_radius = 1
 max_height = 650
 max_width = 800
 
@@ -55,7 +54,7 @@ if url:
         stroke_width=stroke_width,
         background_image=background_image,
         update_streamlit=True,
-        drawing_mode='point',
+        drawing_mode='freedraw',
         height = height,
         width = width,
         key=f'{url}',
