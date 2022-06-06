@@ -3,4 +3,4 @@ requests
 numpy
 pandas
 scikit-image
-streamlit_drawable_canvas
+streamlit_drawable_canvas==0.8.0 
