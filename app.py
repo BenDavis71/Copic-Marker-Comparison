@@ -38,7 +38,7 @@ if url:
     width, height = background_image.size
     
     # Create a canvas component
-    canvas_result = st_canvas(
+    canvas_result1 = st_canvas(
         fill_color="rgba(0, 0, 0, 0)",  # Fixed transparent fill color
         stroke_width=stroke_width,
         point_display_radius=point_display_radius,
